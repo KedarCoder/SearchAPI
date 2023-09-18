@@ -141,3 +141,14 @@ src/
 Links to Visit
 List Of API and libraries 
 https://medium.com/javarevisited/20-essential-java-libraries-and-apis-every-programmer-should-learn-5ccd41812fc7
+
+Requests: Expects POST requests to /api/items/search with a SearchRequest request body.
+{
+  "filters": [
+    {
+      "fieldName": "name",
+      "operator": "like",
+      "value": "Item"
+    }
+  ]
+}
