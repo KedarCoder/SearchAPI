@@ -152,3 +152,20 @@ Requests: Expects POST requests to /api/items/search with a SearchRequest reques
     }
   ]
 }
+
+
+Corrected {
+    "filters": [
+        
+        {
+            "fieldName": "price",
+            "operator": "ge",
+            "value": 20.0
+            
+            }
+        
+    ],
+    "page": 0,
+    "size": 2
+}
+
