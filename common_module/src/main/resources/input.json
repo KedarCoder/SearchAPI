@@ -1,0 +1,48 @@
+[
+  {
+    "ModuleName": "USER",
+    "Fields": [
+      {
+        "name": "name",
+        "type": "text",
+		"primaryKey":"true",
+        "validation": {
+          "pattern": "MA",
+          "maximum": 20
+        }
+      },
+	  {
+        "name": "mobilenumber",
+		"primaryKey":"true",
+        "type": "text",
+        "validation": {
+          "pattern": "MT"
+        }
+      },
+      {
+        "name": "city",
+       "type": "dropdown",
+        "validation": {
+          "pattern": "MA",
+          "maxLength": 20
+        }
+      },
+      {
+        "name": "age",
+        "type": "dropdown",
+        "validation": {
+		"pattern": "MN",
+          "minimum": 1,
+          "maximum": 3
+        }
+      },
+      {
+        "name": "gender",
+		"type": "radio",
+        "validation": {
+          "pattern": "MA"
+        }
+      }
+    ]
+  }
+]
