@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "a264f196-09de-4576-88e1-be8a3681402e",
+		"name": "CommanMOdule",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_temp-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t    \"name\": \"Tejas\",\r\n\t    \"mobilenumber\":\"9658426357\",\r\n\t    \"city\": \"Mumbai\",\r\n\t    \"age\": 21,\r\n\t    \"gender\" :\"M\"\r\n\t \r\n\t  }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/common_module/create/USERR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"common_module",
+						"create",
+						"USERR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/update/USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vikas\",\r\n    \"mobilenumber\":\"9158647586\",\r\n    \"city\": \"UK\",\r\n    \"age\": 25,\r\n    \"gender\": \"M\"\r\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/update/USER",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"update",
+						"USER"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/readData/USER/age/25",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t   \"name\": \"Laura Anderson\",\r\n\t   \"mobilenumber\":\"6667778888\"\r\n\t  \r\n }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/commonModule/delete/USER",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commonModule",
+						"delete",
+						"USER"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/readData/Student/Name/Puti",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Suresh\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/readData/Student/Name/Puti",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"readData",
+						"Student",
+						"Name",
+						"Puti"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Approve",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t    \"name\": \"Pramo\",\r\n\t    \"mobilenumber\":\"9652346891\"\r\n\t \r\n\t  }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/common_module/USER/reject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"common_module",
+						"USER",
+						"reject"
+					]
+				},
+				"description": "\t\t\t\t"
+			},
+			"response": []
+		}
+	]
+}
