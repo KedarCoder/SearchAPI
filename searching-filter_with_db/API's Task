@@ -1,0 +1,153 @@
+
+
+1 - User Authentication and Authorization API:
+https://www.appsdeveloperblog.com/spring-boot-password-encryption-using-jasypt/
+https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0
+https://www.bezkoder.com/spring-boot-jwt-authentication/
+https://medium.com/geekculture/securing-your-microservices-architecture-with-spring-boot-an-in-depth-guide-to-authentication-and-d4acd8cf7efb
+https://springframework.guru/jwt-authentication-in-spring-microservices-jwt-token/
+
+While we often use the terms interchangeably, authorization and authentication are two separate functions. 
+Authentication is the process of verifying who a user is, and authorization is the process of verifying what they have access to
+
+Authentication confirms that users are who they say they are. 
+Authorization gives those users permission to access a resource.
+While authentication and authorization might sound similar, 
+they are distinct security processes in the world of identity and access management (IAM).
+
+Define Requirements:
+
+Clearly define the requirements of your application. Understand what types of users you have (e.g., regular users, admins) and what actions they should be able to perform (e.g., access user-specific data, modify application settings).
+Select a Technology Stack:
+
+Choose the programming language, framework, and database technology that best suits your project's needs. Popular choices include Node.js, Ruby on Rails, Django, Express.js, and more.
+Design the Database Schema:
+
+Create a database schema to store user information, roles, permissions, and session tokens. Common tables include users, roles, permissions, and user_roles to establish relationships.
+Implement User Registration (/register):
+
+Develop an endpoint that allows users to register by providing necessary information (e.g., username, email, password). Ensure password hashing and validation to enhance security.
+Implement User Login (/login):
+
+Create an endpoint for user authentication. Validate user credentials, generate an authentication token (e.g., JWT), and return it to the client. Store the token securely on the client-side.
+Token-Based Authentication:
+
+Implement middleware to authenticate API requests using the tokens. Decode and verify the token, and grant or deny access accordingly.
+Authorization and Permissions:
+
+Define roles and permissions for your application. Roles like "user," "admin," or "moderator" can be assigned specific permissions. Implement logic to check if a user has the required permissions to access specific endpoints or perform certain actions.
+User Profile (/profile):
+
+Develop endpoints to retrieve and update user profiles. Ensure that users can only access and modify their own profiles unless they have appropriate permissions to manage other users.
+Logout (/logout):
+
+Create an endpoint for users to log out. This can involve invalidating or revoking the authentication token issued during login.
+Error Handling and Security:
+
+Implement robust error handling to provide meaningful responses to clients and log any security-related incidents. Consider implementing security features like rate limiting, brute force protection, and CORS (Cross-Origin Resource Sharing) headers.
+Testing:
+
+Thoroughly test your API using different scenarios, including valid and invalid inputs, authentication failures, and authorization checks. Use testing frameworks like Jest, Mocha, or Postman for API testing.
+Documentation:
+
+Create clear and comprehensive documentation for your API, including how to use each endpoint, expected responses, and examples.
+Security Auditing:
+
+Regularly review your API for potential security vulnerabilities and apply updates or patches as necessary.
+Deployment:
+
+Deploy your API on a secure server with proper access controls and monitoring.
+Monitoring and Logging:
+
+Implement logging to track user actions and system events. Monitor your API for performance and security using tools like Prometheus, Grafana, or application-specific logging solutions.
+Scale and Optimize:
+
+As your application grows, consider optimizing and scaling your API to handle increased traffic and users. Load balancing and caching mechanisms can help improve performance.
+Compliance:
+
+Depending on your application's nature, ensure compliance with relevant data protection regulations (e.g., GDPR, HIPAA) and follow best practices for data security and privacy.
+
+
+2 - File Upload and Download API:
+
+
+
+ref - https://www.codejava.net/frameworks/spring-boot/file-download-upload-rest-api-examples
+
+
+
+5 - Configuration Management API:
+https://www.baeldung.com/spring-reloading-properties#:~:text=To%20change%20properties%20in%20a,%2F%7Bpath%20to%20file%7D.
+https://www.baeldung.com/spring-cloud-configuration
+
+
+
+
+
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── concerto/
+│   │           └── searching/
+│   │               ├── filter/
+│   │               │   ├── bean/
+│   │               │   │   └── Item.java
+│   │               │   ├── functions/
+│   │               │   │   ├── SearchFilter.java
+│   │               │   │   └── SearchRequest.java
+│   │               │   ├── mode/
+│   │               │   │   ├── ApiResponse.java
+│   │               │   │   ├── ItemController.java
+│   │               │   │   ├── ItemRepository.java
+│   │               │   │   ├── ItemService.java
+│   │               │   └── Application.java
+│   │               └── config/
+│   │                   └── AppConfig.java
+│   └── resources/
+│       ├── application.properties
+│       ├── static/
+│       └── templates/
+│ 
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
+
+
+ /actuator/health
+ 
+ {
+  "status": "UP",
+  "components": {
+    "db": {
+      "status": "UP",
+      "details": {
+        "database": "MySQL",
+        "status": "OK"
+      }
+    },
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": 1024,
+        "free": 512
+      }
+    }
+  }
+}
+
+
+
+Links to Visit
+List Of API and libraries 
+https://medium.com/javarevisited/20-essential-java-libraries-and-apis-every-programmer-should-learn-5ccd41812fc7
+https://medium.com/@miguel.duque7/how-to-sort-a-spring-boot-rest-api-with-sql-database-ef8856e4f032
+
+
+https://www.onlinetutorialspoint.com/spring-boot/spring-boot-actuator-database-health-check.html
+ Exposing the full details anonymously requires to disable the security of the actuator.
+ 
+ Search And Filter 
+ https://medium.com/@cmmapada/advanced-search-and-filtering-using-spring-data-jpa-specification-and-criteria-api-b6e8f891f2bf
