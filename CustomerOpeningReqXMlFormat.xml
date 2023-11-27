@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Document>
+	<CstmrOpngReq>
+		<MsgId>
+			<ID> Identification code of the message as assigned by the PSP.
+				The first 4 digits of the message ID should be the prefix of the 
+				bank (prefix is found in the Banks Information section).Text(35)
+			</ID>
+			<CreDtTm> Date and time at which the message was created.ISO Date Time..2017-03-06T17:35:18.138+04:00 (YYYY-MM-DDThh:mm:ss.sss+/-hh:mm)
+			</CreDtTm>
+		</MsgId>
+		<PrtcpntId>Identification code of the PSP (Business identifier code (BIC)) consist of eight (8) or eleven (11)
+		</PrtcpntId>
+		<CstmrInfo>
+			<CstmrId>  Customer identification information.
+				<Id> Identification Number of the customer (Passport number and Visa number separated by – in case it was a visitor) Text(24)</Id>
+				<IdTp> The code of the identification type.It should map to one of the supported identification types as defined in QMP system Text(4) </IdTp>
+				<IdIssngCtryCd> The country that issued the ID. Text(2) </IdIssngCtryCd>
+			</CstmrId>
+			<CstmrTp> Type of the customer.It should map to one of the supported customer types as defined in QMP system (found in the Customer Types section). Text(10)</CstmrTp>
+			<CstmrNm> Name of the customer.Text(105)</CstmrNm>
+			<DobOrRegDt> Date of birth for the customer (if customer is a person), or registration date of the customer (if customer is an institution).</DobOrRegDt>
+		</CstmrInfo>
+		<Address> Address information of the customer ..all other tags are optional under this
+			<POBx> Post office box of customer Text(100)</POBx>
+			<PstCd> Postal code of customer Text(100)</PstCd>
+			<StrtNm> Customer's street name Text(100)</StrtNm>
+			<BldgNb> Customer's building number Text(100)</BldgNb>
+			<PhneNb> Customer's phone number  Text(100)</PhneNb>
+			<MobNb>Customer's mobile number Text(100)</MobNb>
+			<CtyNm> Name of city Text(100)</CtyNm>
+			<TwnNm> Name of town Text(100)</TwnNm>
+			<GvrnNm> Name of governorate Text(100)</GvrnNm>
+			<CtryCd> The customer's country of residence. Text(2)</CtryCd>
+			<AdtnlInf> Additional information related to the customer registration request.Text(100)</AdtnlInf>
+		</Address>
+	</CstmrOpngReq>
+</Document>
+
+			
+		
+			
