@@ -1,7 +1,7 @@
-<Document>
+<Student>
 	<FIToFICstmrCdtTrf>
 		<GrpHdr>
-			<MsgId>QNBA123548456215</MsgId>
+			<MsgId>QNBA123548456214</MsgId>
 			<CreDtTm>>2017-03-06T17:35:18.138+04:00</CreDtTm>
 			<NbOfTxs> ##"Group Header/Number Of Transactions" must equal the number of occurrences of "Credit Transfer Transaction Information".
 			</NbOfTxs>
@@ -94,6 +94,7 @@
 			<PlcAndNm>Text</PlcAndNm>
 			<Envlp>
 				<ns2:achSupplementaryData>
+				<MsgId>QNBA1235484562166</MsgId>
 					<ns2:batchSource>Number(2)</ns2:batchSource>
 					<ns2:consumerID>Text(16)</ns2:consumerID>
 					<ns2:merchCategoryCd>Number(4)</ns2:merchCategoryCd>
@@ -115,10 +116,10 @@
 	</FIToFICstmrCdtTrf>	
 	
 	
-	<FIToFICstmrCdtTrf>
+	<FIToFICstmrCdtTrf1>
 		<GrpHdr>
 			<MsgId>QNBA123548456215</MsgId>
-			<CreDtTm>>2017-03-06T17:35:18.138+04:00</CreDtTm>
+			<CreDtTm>2017-03-06T17:35:18.138+04:00</CreDtTm>
 			<NbOfTxs> ##"Group Header/Number Of Transactions" must equal the number of occurrences of "Credit Transfer Transaction Information".
 			</NbOfTxs>
 			<TtlIntrBkSttlmAmt>="QAR">100</TtlIntrBkSttlmAmt>
@@ -134,7 +135,7 @@
 					<Cd>TEL</Cd>
 				</LclInstrm>
 				<CtgyPurp>
-					<Prtry>35TEXT</Prtry>
+					<Prtry>36TEXT</Prtry>
 				</CtgyPurp>
 			</PmtTpInf>
 			<FinInstnId>
@@ -228,8 +229,8 @@
 				</ns2:achSupplementaryData>
 			</Envlp>
 		</SplmtryData>
-	</FIToFICstmrCdtTrf>
+	</FIToFICstmrCdtTrf1>
 	
 	
-</Document>
+</Student>
 

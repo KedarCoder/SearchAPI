@@ -1,0 +1,88 @@
+2023-12-08 10:46:55,233 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~Id : Max24Text
+2023-12-08 10:46:55,238 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~PmtId~EndToEndId : 30Text
+2023-12-08 10:46:55,238 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:grpMerchId : Text(16)
+2023-12-08 10:46:55,238 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:consumerID : Text(16)
+2023-12-08 10:46:55,238 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:tipOrConvnceIndctr : Number(2)
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:postCd : Text(10)
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~Id : Max24Text
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~SttlmInf~SttlmnMtd : CLRG
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~DbtrAcct~Id~Othr~Id : Max34Text
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~PmtTpInf~LclInstrm~Cd : TEL
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~MsgId : QNBA1235484562166
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchCategoryCd : Number(4)
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~TtlIntrBkSttlmAmt : ="QAR">100
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~FinInstnId~BICFI : consist of eight (8) or eleven (11) contiguous characters
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~SttlmInf~ClrSys~Prtry : QCB
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchantCity : Text (15)
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~NbOfTxs : ##"Group Header/Number Of Transactions" must equal the number of occurrences of "Credit Transfer Transaction Information".
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:batchSource : Number(2)
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~SchmeNm~Prtry : Max4Text
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~Issr : It will hold the country where the ID was issued.
+2023-12-08 10:46:55,239 [main] INFO  java_xml_parser.XMLParser - GrpHdr~MsgId : QNBA123548456214
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - GrpHdr~IntrBkSttlmDt : 2015-05-26
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~Issr : SO 3166, Alpha-2 code
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:countryCd : Text(2)
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~DbtrAgt~FinInstnId~BICFI : consist of eight (8) or eleven (11) contiguous characters
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~SchmeNm~Prtry : Max4Text
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~CdtrAgt~FinInstnId~BICFI : it will contain the BIC of the QMP system as assigned by QCB.
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:pntOfInitiateMethd : Number(2)
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - GrpHdr~CreDtTm : >2017-03-06T17:35:18.138+04:00
+2023-12-08 10:46:55,240 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~IntrBkSttlmAmt : ="QAR">100
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:sessionSequence : Number(6)
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:filler : Text(30)
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - GrpHdr~InstdAgt~FinInstnId~BICFI : QMAGQAQAMPC
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Nm : Max105Text
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - GrpHdr~PmtTpInf~CtgyPurp~Prtry : 35TEXT
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Nm : Max105Text
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~CdtrAcct~Id~Othr~Id : Max34Text
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:terminalId : Text (16)
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~PmtId~TxId : 16Text
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~ChrgBr : SLEV
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchantName : Text (20)
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~PlcAndNm : Text
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:feePercentage : Decimal
+2023-12-08 10:46:55,241 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:invoiceNumber : Number(20)
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~Id : Max24Text
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~PmtId~EndToEndId : 30Text
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:grpMerchId : Text(16)
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:consumerID : Text(16)
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:tipOrConvnceIndctr : Number(2)
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:postCd : Text(10)
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~Id : Max24Text
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - GrpHdr~SttlmInf~SttlmnMtd : CLRG
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~DbtrAcct~Id~Othr~Id : Max34Text
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - GrpHdr~PmtTpInf~LclInstrm~Cd : TEL
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~MsgId : QNBA1235484562166
+2023-12-08 10:46:55,242 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchCategoryCd : Number(4)
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~TtlIntrBkSttlmAmt : ="QAR">100
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~FinInstnId~BICFI : consist of eight (8) or eleven (11) contiguous characters
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~SttlmInf~ClrSys~Prtry : QCB
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchantCity : Text (15)
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~NbOfTxs : ##"Group Header/Number Of Transactions" must equal the number of occurrences of "Credit Transfer Transaction Information".
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:batchSource : Number(2)
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~SchmeNm~Prtry : Max4Text
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~Issr : It will hold the country where the ID was issued.
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~MsgId : QNBA123548456215
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~IntrBkSttlmDt : 2015-05-26
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Id~PrvtId~Othr~Issr : SO 3166, Alpha-2 code
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:countryCd : Text(2)
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~DbtrAgt~FinInstnId~BICFI : consist of eight (8) or eleven (11) contiguous characters
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Id~PrvtId~Othr~SchmeNm~Prtry : Max4Text
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~CdtrAgt~FinInstnId~BICFI : it will contain the BIC of the QMP system as assigned by QCB.
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:pntOfInitiateMethd : Number(2)
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - GrpHdr~CreDtTm : 2017-03-06T17:35:18.138+04:00
+2023-12-08 10:46:55,243 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~IntrBkSttlmAmt : ="QAR">100
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:sessionSequence : Number(6)
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:filler : Text(30)
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - GrpHdr~InstdAgt~FinInstnId~BICFI : QMAGQAQAMPC
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Dbtr~Nm : Max105Text
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - GrpHdr~PmtTpInf~CtgyPurp~Prtry : 36TEXT
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~Cdtr~Nm : Max105Text
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~CdtrAcct~Id~Othr~Id : Max34Text
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:terminalId : Text (16)
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~PmtId~TxId : 16Text
+2023-12-08 10:46:55,244 [main] INFO  java_xml_parser.XMLParser - CdtTrfTxInf~ChrgBr : SLEV
+2023-12-08 10:46:55,245 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:merchantName : Text (20)
+2023-12-08 10:46:55,245 [main] INFO  java_xml_parser.XMLParser - SplmtryData~PlcAndNm : Text
+2023-12-08 10:46:55,245 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:feePercentage : Decimal
+2023-12-08 10:46:55,245 [main] INFO  java_xml_parser.XMLParser - SplmtryData~Envlp~ns2:achSupplementaryData~ns2:invoiceNumber : Number(20)

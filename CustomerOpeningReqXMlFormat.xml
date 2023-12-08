@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+Cutomer Record Opening Message -identified with the code cstmrreg.01.01
 <Document>
 	<CstmrOpngReq>
 		<MsgId>
@@ -37,7 +36,6 @@
 		</Address>
 	</CstmrOpngReq>
 </Document>
-
 			
 		
 			
