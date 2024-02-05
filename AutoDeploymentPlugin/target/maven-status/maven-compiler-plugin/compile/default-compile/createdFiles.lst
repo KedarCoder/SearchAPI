@@ -1,0 +1,3 @@
+com\concerto\validator\autoDeployment\AutoDeploymentApplication.class
+com\concerto\validator\autoDeployment\init\AppInitializer.class
+com\concerto\validator\autoDeployment\service\ReadZip.class

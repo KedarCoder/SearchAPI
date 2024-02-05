@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+ 
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd} %p %m%n</Property>
+        <Property name="LOG_PATTERN_FILE">%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p %c %m%n</Property>
+    </Properties>
+     
+
+ 
+    <Appenders>
+
+        <RollingFile name="infoLog"  fileName="${sys:configPath}/log/ProdLog/CM_Appl_INFO.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/%d{dd}-CM_Appl_INFO-%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="15360KB" />
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>
+         
+         <RollingFile name="errorLog" fileName="${sys:configPath}/log/ProdLog/CM_Appl_ERROR.log"
+              filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/%d{dd}-CM_Appl_ERROR-%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="15360KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>  
+        
+        <RollingFile name="warnLog" fileName="${sys:configPath}/log/ProdLog/CM_Appl_EMS.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/%d{dd}-CM_Appl_EMS-%i.log" >
+            <LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="15360KB" />
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>
+        
+       <RollingFile name="debugLog" fileName="${sys:configPath}/log/ProdLog/CM_Appl_DEBUG.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/%d{dd}-CM_Appl_DEBUG-%i.log" >
+            <LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="15360KB" />
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>
+        
+        <RollingFile name="ReplaceUtility" fileName="${sys:configPath}/log/ProdLog/ReplaceUtility/ReplaceUtility_Info.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/ReplaceUtility/ReplaceUtility_Info.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>   
+        
+        <RollingFile name="ReplaceUtilityError" fileName="${sys:configPath}/log/ProdLog/ReplaceUtility/ReplaceUtility_Error.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/ReplaceUtility/ReplaceUtility_Error.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile> 
+        
+        
+         <RollingFile name="SimpleTCPClientInfoLog" fileName="${sys:configPath}/log/ProdLog/SimpleTCPClient_Info.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/SimpleTCPClient_Info.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile> 
+        
+         <RollingFile name="SimpleTCPClientErrLog" fileName="${sys:configPath}/log/ProdLog/SimpleTCPClient_Error.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/SimpleTCPClient_Error.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile> 
+        
+       <RollingFile name="CustomInfoLog" fileName="${sys:configPath}/log/ProdLog/CUSTOM_LOG_INFO.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/CUSTOM_LOG_INFO.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>
+        
+        <RollingFile name="CustomInfoLogTRANSACTIONID" fileName="${sys:configPath}/log/ProdLog/CUSTOM_LOG_INFO_TRANSACTIONID.log"
+            filePattern="${sys:configPath}/log/ProdLog/%d{yyyy}/%d{yyyy-MM-dd}/CUSTOM_LOG_INFO_TRANSACTIONID.%d{yyyy-MM-dd}.%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN_FILE}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20480KB" />
+                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="365"/>
+        </RollingFile>
+        
+    </Appenders>
+ 
+    <Loggers>
+         
+        <Logger name="com.concerto" additivity="false" level="DEBUG">
+            <AppenderRef ref="infoLog"  />
+            <AppenderRef ref="errorLog" />
+            <AppenderRef ref="warnLog" />
+        </Logger>
+        
+        <Logger name="ReplaceUtility" additivity="false">
+            <AppenderRef ref="ReplaceUtility" />
+        </Logger>
+        
+        <Logger name="ReplaceUtilityError" additivity="false">
+            <AppenderRef ref="ReplaceUtilityError" />
+        </Logger>
+        
+        <Logger name="SimpleTCPClientInfoLog" additivity="false">
+            <AppenderRef ref="SimpleTCPClientInfoLog" />
+        </Logger>
+        
+        <Logger name="SimpleTCPClientErrLog" additivity="false">
+            <AppenderRef ref="SimpleTCPClientErrLog" />
+        </Logger>
+        
+         <Logger name="CustomInfoLog" additivity="false">
+            <AppenderRef ref="CustomInfoLog" />
+        </Logger>
+        
+        <Logger name="CustomInfoLogTRANSACTIONID" additivity="false">
+            <AppenderRef ref="CustomInfoLogTRANSACTIONID" />
+        </Logger> 
+                 
+        <Root level="info">
+            <AppenderRef ref="infoLog"/>
+        </Root>
+ 
+    </Loggers>
+ 
+</Configuration>
